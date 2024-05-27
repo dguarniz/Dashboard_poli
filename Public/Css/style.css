@@ -117,3 +117,18 @@ body{
     height: auto;
     width: 1200px;
 }
+
+/* TABLA DE VENTAS */
+
+.sectionTable{
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #747474;
+    padding: 20px;
+    margin: 60px;
+}
+
+.sectionTable table tr th{
+    color: #1ca8d3;
+    text-transform: uppercase;
+}
