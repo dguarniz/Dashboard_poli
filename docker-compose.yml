@@ -5,7 +5,7 @@ services:
     networks:
      - redConexion
     ports:
-      - 3001:3001
+      - 3000:3001
 
   dashboardapp:
     build:
@@ -18,7 +18,7 @@ services:
   jenkins:
     image: jenkins/jenkins:lts
     ports: 
-     - "8080:8080"
+     - "8090:8080"
      - "50000:50000"
     volumes:
       - jenkins_home:/var/jenkins_home

@@ -2,7 +2,7 @@
 async function fetchDataTotal() {
 
     try {
-        const response = await fetch('http://localhost:3000/totalventas');
+        const response = await fetch('http://localhost:3000/api/totalventas');
         if (!response.ok) {
             throw new Error('Error en la solicitud: ' + response.statusText);
         }
@@ -22,7 +22,7 @@ async function fetchRegion() {
     let bodyRegion = [];
 
     try {
-        const response = await fetch('http://localhost:3000/region');
+        const response = await fetch('http://localhost:3000/api/region');
         if (!response.ok) {
             throw new Error('Error en la solicitud: ' + response.statusText);
         }
@@ -70,7 +70,7 @@ async function fetchSellers() {
     let colorsArray = [];
 
     try {
-        const response = await fetch('http://localhost:3000/vendedores');
+        const response = await fetch('http://localhost:3000/api/vendedores');
         if (!response.ok) {
             throw new Error('Error en la solicitud: ' + response.statusText);
         }
@@ -113,7 +113,7 @@ async function fetchProducts() {
     let bodyProductCant = [];
 
     try {
-        const response = await fetch('http://localhost:3000/productos');
+        const response = await fetch('http://localhost:3000/api/productos');
         if (!response.ok) {
             throw new Error('Error en la solicitud: ' + response.statusText);
         }
