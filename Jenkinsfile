@@ -11,9 +11,7 @@ pipeline {
         stage('Construir y Desplegar') {
             steps {
                 script {
-                    // Parar y remover los contenedores antiguos
-                    sh 'docker-compose down || true'  // Agrega "|| true" para evitar errores si no hay contenedores corriendo
-                    // Construir y desplegar nuevos contenedores
+                    sh 'docker-compose down || true'
                     sh 'docker-compose up -d'
                 }
             }
